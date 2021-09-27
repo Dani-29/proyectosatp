@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #1b1b1b;
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+
+p, li, b{
+    color: #1b1b1b;
+    font-size: 12pt;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 5px 0 5px 0px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .6);
+    outline: none;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+label{
+    color: #1b1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#containerLogin{
+    width: 100%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(142,251,214);
+background: linear-gradient(0deg, rgba(142,251,214,1) 25%, rgba(210,255,246,1) 53%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#containerLogin:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .20);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bodyLogin{
+    width: 480px;
+    height: 560px;
+    background-color: #fff;
+    padding: 44px 0;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.divLogo{
+    padding: 0 44px 32px;
+}
+
+.logoLogin{
+    width: 160px;
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+#containerLayount{
+    position: relative;
+}
+
+#containerLayount > div{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0 44px;
+    width: 100%;
+    transition: .4s all;
+}
+
+.divButton{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divBtnLogin{
+    margin-top: 60px;
+}
+
+.btnFormLogin{
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    background-color: #0067b8;
+    padding: 8px 20px;
+    font-size: 11pt;
+    letter-spacing: 1px;
+}
+
+.divEmailUser{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#btnPrev{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+#btnPrev i{
+    color: gray;
+}
+
+#btnPrev:hover{
+    background-color: #e3e3e3;
+}
+
+#spanEmail{
+    font-size: 12pt;
+}
+
+.opacity0{
+    opacity: 0;
+}
+
+.opacity1{
+    opacity: 1;
+    transition: opacity .6s;
+}
+
+.layoutActive{
+    left: 0 !important;
+}
+
+.layoutLeft{
+    left: -100% !important;
+}
+
+.layoutRight{
+    left: 100% !important;
+}
+:root {
+  
+    --grayishBlue: hsl(229, 6%, 66%);
+
+}
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 400px;
+    }
+}
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 680px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
